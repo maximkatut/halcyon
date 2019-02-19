@@ -5,8 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/style.min.css">
+  <style>
+    HTML {
+      background-repeat: no-repeat;
+      background-position:  50% 0;
+      /* Mobile layout by default */
+      background-image: url( "img/320.png" );
+    }
+    /* Tablet */
+    @media ( min-width: 760px ) {
+      HTML {
+        /* Tablet layout */
+        background-image: url( "img/760.png" );
+      }
+    }
+    /* Desktop */
+    @media ( min-width: 960px ) {
+      HTML {
+        /* Desktop layout */
+        background-image: url( "img/halcyon960.jpg" );
+      }
+    }
+  </style>
+  <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+  <script src="../node_modules/pixel-glass/script.js"></script>
     <title>HALCYON</title>
   </head>
 
@@ -21,8 +44,8 @@
       <div class="page-header__jumbotron jumbotron text-center ">
         <h1 class="page-header__name display-4 text-uppercase">halcyon<span class="page-header__accent">days</span></h1>
         <p class="page-header__free lead">An exclusive HTML5/CSS3 freebie by Peter Finlan, for Codrops.</p>
-        <p class="page-header__btn-more lead">
-          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        <p class="lead">
+          <a class="page-header__btn-more btn btn-primary btn-lg text-uppercase" href="#" role="button">Learn more</a>
         </p>
       </div>
     </header>
@@ -32,7 +55,7 @@
       <section class="intro container-fluid bg-light text-center">
         <h3 class="intro__title text-uppercase">A creative portfolio template</h3>
         <div class="row justify-content-around">
-          <div class="intro__description col-lg-4">Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent id tempor ipsum. Fusce at massa ac nunc porta fringilla sed eget neque. Quisque quis pretium nulla. Fusce eget bibendum neque, vel volutpat augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+          <div class="intro__description col-lg-8">Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent id tempor ipsum. Fusce at massa ac nunc porta fringilla sed eget neque. Quisque quis pretium nulla. Fusce eget bibendum neque, vel volutpat augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum et malesuada fames ac ante ipsum primis in faucibus.
           </div>
         </div>
       </section>
@@ -41,14 +64,17 @@
         <h3 class="love__title text-uppercase">Love what you do, and you'll do it well</h3>
         <div class="love__list list-promo row">
           <div class="list-promo__item col-md-4">
+            <img class="list-promo__img" src="../source/img/love1.png" alt="">
             <h4 class="list-promo__title text-uppercase">Digital design //</h4>
             <p class="list-promo__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
           </div>
           <div class="list-promo__item col-md-4">
+            <img class="list-promo__img" src="../source/img/love2.png" alt="">
             <h4 class="list-promo__title text-uppercase">Web development //</h4>
             <p class="list-promo__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
           </div>
           <div class=" list-promo__item col-md-4">
+            <img class="list-promo__img" src="../source/img/love3.png" alt="">
             <h4 class="list-promo__title text-uppercase">We love you //</h4>
             <p class="list-promo__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
           </div>
@@ -57,10 +83,12 @@
 
       <section class="iphone container-fluid">
         <div class="iphone__row row">
-          <div class="iphone__img col-md-6"></div>
-          <div class="col-md-6">
-            <h3 class="iphone__title text-uppercase">A creative portfolio template</h3>
-            <div class="iphone__description">Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent id tempor ipsum. Fusce at massa ac nunc porta fringilla sed eget neque. Quisque quis pretium nulla. Fusce eget bibendum neque, vel volutpat augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+          <div class="iphone__col col-md-6 ml-auto">
+            <h3 class="iphone__title text-center text-uppercase">Responsive design specialist</h3>
+            <div class="iphone__description">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+              <p>Mauris ultrices odio vitae nulla ultrices iaculis. Nulla rhoncus odio eu lectus faucibus facilisis. Maecenas ornare augue vitae sollicitudin accumsan.</p>
+              <p>Etiam eget libero et erat eleifend consectetur a nec lectus. Sed id tellus lorem. Suspendisse sed venenatis odio, quis lobortis eros.</p>
             </div>
           </div>
         </div>

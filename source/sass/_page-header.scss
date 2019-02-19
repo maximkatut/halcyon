@@ -1,0 +1,40 @@
+.page-header__jumbotron {
+  height: 800px;
+  padding-top: 247px;
+  margin-bottom: 0;
+  background-color: #b7c0c5;
+  background-repeat: no-repeat;
+  background-image: url("../img/jumbotron.png");
+  background-size: cover;
+  border-radius: 0;
+}
+
+.page-header__name {
+  margin-left: 10px;
+  margin-bottom: 18px;
+  font-size: 40px;
+  letter-spacing: 13px;
+}
+
+.page-header__free {
+  margin-bottom: 60px;
+  font-family: GothamRounded-Medium;
+  font-size: 15px;
+  letter-spacing: 2.16px;
+  color: #8c9398;
+}
+
+.page-header__accent {
+  color: #8c9398;
+}
+
+.page-header__btn-more {
+  padding-top: 20px;
+  height: 60px;
+  width: 200px;
+  font-size: 15px;
+  letter-spacing: 1.9px;
+  background-color: #3dc9b3;
+  border: none;
+  border-radius: 5px;
+}
