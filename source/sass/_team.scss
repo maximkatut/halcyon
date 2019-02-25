@@ -1,5 +1,6 @@
 .team {
   padding-top: 85px;
+  padding-bottom: 184px;
 }
 
 .team__list {
@@ -31,7 +32,7 @@
   width: 200px;
   margin: 0 auto;
   margin-top: 12px;
-  margin-bottom: 58px;
+  margin-bottom: 55px;
 }
 
 .team__item .card-title {
@@ -56,4 +57,8 @@
 .team__social {
   list-style-type: none;
   padding: 0;
+}
+
+.team .carousel-indicators {
+  bottom: -97px;
 }

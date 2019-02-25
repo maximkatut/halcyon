@@ -45,5 +45,11 @@
   &:active {
     background-color: #35a896;
   }
+}
 
+@media (max-width: $mobile-width) {
+  .page-header__name {
+    font-size: 32px;
+    letter-spacing: 10px;
+  }
 }

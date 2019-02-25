@@ -34,13 +34,28 @@
   </head>
 
   <body>
-    <!-- <style>
-      * {
-       border: 1px dashed red; 
-      }
-    </style> -->
-
     <header class="page-header">
+      <nav class="navbar navbar-light bg-light">
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-right" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
       <div class="page-header__jumbotron jumbotron text-center ">
         <h1 class="page-header__name display-4 text-uppercase">halcyon<span class="page-header__accent">days</span></h1>
         <p class="page-header__free lead">An exclusive HTML5/CSS3 freebie by Peter Finlan, for Codrops.</p>
@@ -85,10 +100,27 @@
         <div class="iphone__row row">
           <div class="iphone__col col-md-6 ml-auto">
             <h3 class="iphone__title text-center text-uppercase">Responsive design specialist</h3>
-            <div class="iphone__description">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-              <p>Mauris ultrices odio vitae nulla ultrices iaculis. Nulla rhoncus odio eu lectus faucibus facilisis. Maecenas ornare augue vitae sollicitudin accumsan.</p>
-              <p>Etiam eget libero et erat eleifend consectetur a nec lectus. Sed id tellus lorem. Suspendisse sed venenatis odio, quis lobortis eros.</p>
+            <div id="carouselIphone" class="carousel slide" data-ride="carousel" data-interval="false">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselIphone" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselIphone" data-slide-to="1"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="iphone__description">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+                    <p>Mauris ultrices odio vitae nulla ultrices iaculis. Nulla rhoncus odio eu lectus faucibus facilisis. Maecenas ornare augue vitae sollicitudin accumsan.</p>
+                    <p>Etiam eget libero et erat eleifend consectetur a nec lectus. Sed id tellus lorem. Suspendisse sed venenatis odio, quis lobortis eros.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="iphone__description">
+                    <p>Etiam eget libero et erat eleifend consectetur a nec lectus. Sed id tellus lorem. Suspendisse sed venenatis odio, quis lobortis eros.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+                    <p>Mauris ultrices odio vitae nulla ultrices iaculis. Nulla rhoncus odio eu lectus faucibus facilisis. Maecenas ornare augue vitae sollicitudin accumsan.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -192,44 +224,135 @@
 
       <section class="team container text-center">
         <h3 class="team__title text-uppercase w-100">We're a team that adore what we do</h3>
-        <ul class="team__list row">
-          <li class="team__item col-md-4 card">
-            <img class="card-img-top" src="img/team1.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Jon Snow</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+        <div id="carouselTeam" class="carousel slide" data-ride="carousel" data-interval="false" data-touch="true">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselTeam" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselTeam" data-slide-to="1"></li>
+            <li data-target="#carouselTeam" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <ul class="team__list row">
+                <li class="team__item col-md-4 card">
+                  <img class="card-img-top" src="img/team1.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Jon Snow</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+                  </div>
+                  <ul class="team__social links">
+                    <li class="links__item"><a class="links__link" href="#"><img class="links__img" src="img/social1.png" alt="Social"></a></li>
+                    <li class="links__item"><a class="links__link" href="#"><img class="links__img" src="img/social2.png" alt="twitter"></a></li>
+                    <li class="links__item"><a class="links__link" href="#"><img class="links__img" src="img/social3.png" alt="email"></a></li>
+                  </ul>
+                </li>
+                <li class="team__item col-md-4 card">
+                  <img class="card-img-top" src="img/team2.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Cersei Lannister</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+                  </div>
+                  <ul class="team__social">
+                    <li class="links__item"><a class="links__link" href="#"><img class="links__img" src="img/social1.png" alt="Social"></a></li>
+                    <li class="links__item"><a class="links__link" href="#"><img class="links__img" src="img/social2.png" alt="twitter"></a></li>
+                    <li class="links__item"><a class="links__link" href="#"><img class="links__img" src="img/social3.png" alt="email"></a></li>
+                  </ul>
+                </li>
+                <li class="team__item col-md-4 card">
+                  <img class="card-img-top" src="img/team3.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Jamie Lannister</h5>
+                    <p class="card-text card-text-last">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+                  </div>
+                  <ul class="team__social">
+                    <li class="links__item"><a class="links__link" href="#"><img class="links__img" src="img/social1.png" alt="Social"></a></li>
+                    <li class="links__item"><a class="links__link" href="#"><img class="links__img" src="img/social2.png" alt="twitter"></a></li>
+                    <li class="links__item"><a class="links__link" href="#"><img class="links__img" src="img/social3.png" alt="email"></a></li>
+                  </ul>
+                </li>
+              </ul>
             </div>
-            <ul class="team__social links">
-              <li class="links__item"><a class="links__link" href="#"><img class="links__img" src="img/social1.png" alt="Social"></a></li>
-              <li class="links__item"><a class="links__link" href="#"><img class="links__img" src="img/social2.png" alt="twitter"></a></li>
-              <li class="links__item"><a class="links__link" href="#"><img class="links__img" src="img/social3.png" alt="email"></a></li>
-            </ul>
-          </li>
-          <li class="team__item col-md-4 card">
-            <img class="card-img-top" src="img/team2.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Cersei Lannister</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+            <div class="carousel-item">
+              <ul class="team__list row">
+                <li class="team__item col-md-4 card">
+                  <img class="card-img-top" src="img/team1.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Jon Snow</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+                  </div>
+                  <ul class="team__social links">
+                    <li class="links__item"><a class="links__link" href="#"><img class="links__img" src="img/social1.png" alt="Social"></a></li>
+                    <li class="links__item"><a class="links__link" href="#"><img class="links__img" src="img/social2.png" alt="twitter"></a></li>
+                    <li class="links__item"><a class="links__link" href="#"><img class="links__img" src="img/social3.png" alt="email"></a></li>
+                  </ul>
+                </li>
+                <li class="team__item col-md-4 card">
+                  <img class="card-img-top" src="img/team2.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Cersei Lannister</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+                  </div>
+                  <ul class="team__social">
+                    <li class="links__item"><a class="links__link" href="#"><img class="links__img" src="img/social1.png" alt="Social"></a></li>
+                    <li class="links__item"><a class="links__link" href="#"><img class="links__img" src="img/social2.png" alt="twitter"></a></li>
+                    <li class="links__item"><a class="links__link" href="#"><img class="links__img" src="img/social3.png" alt="email"></a></li>
+                  </ul>
+                </li>
+                <li class="team__item col-md-4 card">
+                  <img class="card-img-top" src="img/team3.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Jamie Lannister</h5>
+                    <p class="card-text card-text-last">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+                  </div>
+                  <ul class="team__social">
+                    <li class="links__item"><a class="links__link" href="#"><img class="links__img" src="img/social1.png" alt="Social"></a></li>
+                    <li class="links__item"><a class="links__link" href="#"><img class="links__img" src="img/social2.png" alt="twitter"></a></li>
+                    <li class="links__item"><a class="links__link" href="#"><img class="links__img" src="img/social3.png" alt="email"></a></li>
+                  </ul>
+                </li>
+              </ul>
             </div>
-            <ul class="team__social">
-              <li class="links__item"><a class="links__link" href="#"><img class="links__img" src="img/social1.png" alt="Social"></a></li>
-              <li class="links__item"><a class="links__link" href="#"><img class="links__img" src="img/social2.png" alt="twitter"></a></li>
-              <li class="links__item"><a class="links__link" href="#"><img class="links__img" src="img/social3.png" alt="email"></a></li>
-            </ul>
-          </li>
-          <li class="team__item col-md-4 card">
-            <img class="card-img-top" src="img/team3.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Jamie Lannister</h5>
-              <p class="card-text card-text-last">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+            <div class="carousel-item">
+              <ul class="team__list row">
+                <li class="team__item col-md-4 card">
+                  <img class="card-img-top" src="img/team1.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Jon Snow</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+                  </div>
+                  <ul class="team__social links">
+                    <li class="links__item"><a class="links__link" href="#"><img class="links__img" src="img/social1.png" alt="Social"></a></li>
+                    <li class="links__item"><a class="links__link" href="#"><img class="links__img" src="img/social2.png" alt="twitter"></a></li>
+                    <li class="links__item"><a class="links__link" href="#"><img class="links__img" src="img/social3.png" alt="email"></a></li>
+                  </ul>
+                </li>
+                <li class="team__item col-md-4 card">
+                  <img class="card-img-top" src="img/team2.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Cersei Lannister</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+                  </div>
+                  <ul class="team__social">
+                    <li class="links__item"><a class="links__link" href="#"><img class="links__img" src="img/social1.png" alt="Social"></a></li>
+                    <li class="links__item"><a class="links__link" href="#"><img class="links__img" src="img/social2.png" alt="twitter"></a></li>
+                    <li class="links__item"><a class="links__link" href="#"><img class="links__img" src="img/social3.png" alt="email"></a></li>
+                  </ul>
+                </li>
+                <li class="team__item col-md-4 card">
+                  <img class="card-img-top" src="img/team3.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Jamie Lannister</h5>
+                    <p class="card-text card-text-last">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+                  </div>
+                  <ul class="team__social">
+                    <li class="links__item"><a class="links__link" href="#"><img class="links__img" src="img/social1.png" alt="Social"></a></li>
+                    <li class="links__item"><a class="links__link" href="#"><img class="links__img" src="img/social2.png" alt="twitter"></a></li>
+                    <li class="links__item"><a class="links__link" href="#"><img class="links__img" src="img/social3.png" alt="email"></a></li>
+                  </ul>
+                </li>
+              </ul>
             </div>
-            <ul class="team__social">
-              <li class="links__item"><a class="links__link" href="#"><img class="links__img" src="img/social1.png" alt="Social"></a></li>
-              <li class="links__item"><a class="links__link" href="#"><img class="links__img" src="img/social2.png" alt="twitter"></a></li>
-              <li class="links__item"><a class="links__link" href="#"><img class="links__img" src="img/social3.png" alt="email"></a></li>
-            </ul>
-          </li>
-        </ul>
+          </div>
+        </div>
       </section>
 
       <section class="subscribe container-fluid text-center text-uppercase">
