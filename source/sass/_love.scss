@@ -5,10 +5,15 @@
 }
 
 .love__title {
+  position: relative;
   margin-bottom: 122px;
   padding-left: 20px;
   padding-right: 20px;
   font-size: 15px;
   letter-spacing: 2.3px;
+
+  &::before {
+    @include triangle;
+  }
 }
 

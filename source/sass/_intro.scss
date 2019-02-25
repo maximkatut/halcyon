@@ -5,9 +5,14 @@
 }
 
 .intro__title {
+  position: relative;
   margin-bottom: 95px;
   font-size: 15px;
   letter-spacing: 2.3px;
+
+  &::before {
+    @include triangle;
+  }
 }
 
 .intro__description {

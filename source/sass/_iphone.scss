@@ -2,7 +2,7 @@
   background-color: #b7c0c5;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: -160px;
+  background-position: -170px;
   background-image: url("../img/iphone.jpg");
 }
 
@@ -11,11 +11,16 @@
 }
 
 .iphone__title {
+  position: relative;
   margin-left: 41px;
   margin-top: 132px;
   margin-bottom: 76px;
   font-size: 15px;
   letter-spacing: 2.2px;
+
+  &::before {
+    @include triangle;
+  }
 }
 
 .iphone__description {

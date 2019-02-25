@@ -1,0 +1,73 @@
+.contacts {
+  padding-top: 123px;
+  background-color: #f3f5f8;
+}
+
+.contacts__title {
+  position: relative;
+  margin-bottom: 127px;
+  font-size: 15px;
+  letter-spacing: 2.3px;
+
+  &::before {
+    @include triangle;
+  }
+}
+
+.contacts__list {
+  margin: 0 30px;
+  padding: 0;
+}
+
+.contacts__item {
+  margin-bottom: 15px;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.contacts__wrapper {
+  width: 92%;
+  margin: 0 auto;
+  padding-top: 27px;
+  background-color: #ffffff;
+}
+
+.contacts__wrapper a {
+  color: black;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.contacts__wrapper .card-img-top {
+  width: 12px;
+}
+
+.contacts__item:last-child .card-img-top {
+  width: 15px;
+}
+
+.contacts__wrapper .card-body {
+  padding: 0;
+  padding-top: 16px;
+  padding-bottom: 25px;
+}
+
+.contacts__wrapper .card-title {
+  margin-bottom: 21px;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 2.3px;
+  color: #3dc9b3;
+}
+
+.contacts__wrapper .card-text {
+  letter-spacing: -1px;
+}
+
+.contacts__social {
+  margin-top: 85px;
+}

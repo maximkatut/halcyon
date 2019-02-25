@@ -1,3 +1,22 @@
 .problems {
-  
+  margin-bottom: 102px;
+  background-color: #49463f;
+  background-image: url(../img/problems-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "GothamRoundedBook";
+  color: white;
+}
+
+.problems__title {
+  padding-top: 75px;
+  padding-bottom: 5px;
+  font-size: 40px;
+  letter-spacing: 10px;
+}
+
+.problems__subtitle {
+  padding-bottom: 135px;
+  font-size: 25px;
+  letter-spacing: 7px;
 }

@@ -1,0 +1,38 @@
+.about {
+  padding: 0 68px;
+  padding-bottom: 155px;
+}
+
+.about__list {
+  padding: 0;
+}
+
+.about__item {
+  border: none;
+}
+
+.about__item img {
+  margin-bottom: 23px;
+  border-radius: 0;
+}
+
+.about__item .card-body {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.about__item h5 {
+  margin-bottom: 45px;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.about__item p {
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+  text-align-last: center;
+  letter-spacing: -1px;
+  line-height: 20px;
+}

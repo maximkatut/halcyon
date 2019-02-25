@@ -1,0 +1,10 @@
+@mixin triangle {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  top: 230%;
+  left: 49.35%;
+  background-image: url("../img/triangle.png");
+  background-repeat: no-repeat;
+}
