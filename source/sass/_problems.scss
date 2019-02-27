@@ -16,7 +16,14 @@
 }
 
 .problems__subtitle {
+  position: relative;
   padding-bottom: 135px;
   font-size: 25px;
   letter-spacing: 7px;
+
+  &::before {
+    @include arrow;
+    top: 65px;
+    left: calc(50% - 45px/2);
+  }
 }

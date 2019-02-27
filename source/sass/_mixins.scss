@@ -8,3 +8,25 @@
   background-image: url("../img/triangle.png");
   background-repeat: no-repeat;
 }
+
+@mixin line {
+  position: absolute;
+  content: "";
+  width: 32px;
+  height: 3px;
+  top: 32px;
+  left: calc(50% - 16px);
+  background-color: #3dc9b3;
+}
+
+@mixin arrow {
+  position: absolute;
+  content: "";
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #3dc9b3;
+  background-image: url(../img/arrow.png);
+  background-repeat: no-repeat;
+  background-position: 14px 18px;
+}

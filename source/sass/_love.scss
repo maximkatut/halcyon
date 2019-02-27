@@ -17,3 +17,10 @@
   }
 }
 
+.list-promo__title {
+  position: relative;
+
+  &::before {
+    @include line;
+  }
+}

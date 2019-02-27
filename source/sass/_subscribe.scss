@@ -1,9 +1,28 @@
 .subscribe {
+  position: relative;
   padding-top: 172px;
   padding-bottom: 100px;
   background-image: url("../img/subscribe-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+
+  &::before {
+    @include arrow;
+    transform: rotate(180deg);
+    bottom: -23px;
+    left: calc(50% - 45px/2);
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 26px;
+    height: 26px;
+    top: 27%;
+    left: calc(50% - 13px);
+    background-image: url(../img/letter.png);
+    background-repeat: no-repeat;
+  }
 }
 
 .subscribe__title {

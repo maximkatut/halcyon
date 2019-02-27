@@ -19,6 +19,14 @@
 .about__item .card-body {
   padding-left: 0;
   padding-right: 0;
+
+  & .card-title {
+    position: relative;
+
+    &::before {
+      @include line;
+    }
+  }
 }
 
 .about__item h5 {
