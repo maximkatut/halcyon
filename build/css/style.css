@@ -105,7 +105,7 @@ body {
     width: 15px;
     height: 15px;
     bottom: -40px;
-    left: 49.35%;
+    left: calc(50% - 15px/2);
     background-image: url("../img/triangle.png");
     background-repeat: no-repeat; }
 
@@ -137,7 +137,7 @@ body {
     width: 15px;
     height: 15px;
     bottom: -40px;
-    left: 49.35%;
+    left: calc(50% - 15px/2);
     background-image: url("../img/triangle.png");
     background-repeat: no-repeat; }
 
@@ -162,6 +162,7 @@ body {
   margin-bottom: 50px; }
 
 .list-promo__item {
+  padding-left: 0;
   padding-right: 0; }
 
 .list-promo__title {
@@ -203,7 +204,7 @@ body {
     width: 15px;
     height: 15px;
     bottom: -40px;
-    left: 49.35%;
+    left: calc(50% - 15px/2);
     background-image: url("../img/triangle.png");
     background-repeat: no-repeat; }
 
@@ -227,7 +228,8 @@ body {
     margin-top: 80px;
     margin-left: 0; }
   .iphone__description {
-    padding-left: 50px; }
+    padding-left: 25px;
+    padding-right: 25px; }
   .iphone__description p {
     margin-bottom: 20px; }
     .iphone__description p:nth-child(3) {
@@ -316,6 +318,8 @@ body {
 
 @media (max-width: 767px) {
   .about {
+    padding-right: 40px;
+    padding-left: 40px;
     padding-bottom: 100px; } }
 
 .passion {
@@ -353,7 +357,7 @@ body {
     width: 15px;
     height: 15px;
     bottom: -40px;
-    left: 49.35%;
+    left: calc(50% - 15px/2);
     background-image: url("../img/triangle.png");
     background-repeat: no-repeat; }
 
@@ -383,13 +387,12 @@ body {
   letter-spacing: 2px; }
 
 .team__item .card-text {
-  padding-right: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
   text-align: justify;
   text-align-last: center;
   line-height: 20px;
   letter-spacing: -1px; }
-  .team__item .card-text-last {
-    padding: 0; }
 
 .team__social {
   list-style-type: none;
@@ -404,7 +407,10 @@ body {
   .team__title {
     margin-bottom: 50px; }
   .team .carousel-indicators {
-    bottom: -67px; } }
+    bottom: -67px; }
+  .team__item .card-text {
+    padding-left: 40px;
+    padding-right: 40px; } }
 
 .links__item {
   display: inline-block;
@@ -507,7 +513,7 @@ body {
     width: 15px;
     height: 15px;
     bottom: -40px;
-    left: 49.35%;
+    left: calc(50% - 15px/2);
     background-image: url("../img/triangle.png");
     background-repeat: no-repeat; }
 

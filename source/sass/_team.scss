@@ -50,15 +50,12 @@
 }
 
 .team__item .card-text {
-  padding-right: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
   text-align: justify;
   text-align-last: center;
   line-height: 20px;
   letter-spacing: -1px;
-
-  &-last {
-    padding: 0;
-  }
 }
 
 .team__social {
@@ -82,5 +79,10 @@
 
   .team .carousel-indicators {
     bottom: -67px;
+  }
+
+  .team__item .card-text {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
