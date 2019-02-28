@@ -18,7 +18,7 @@
     content: "";
     width: 26px;
     height: 26px;
-    top: 27%;
+    top: 110px;
     left: calc(50% - 13px);
     background-image: url(../img/letter.png);
     background-repeat: no-repeat;
@@ -29,7 +29,7 @@
   margin-bottom: 43px;
   font-family: "GothamRoundedBook";
   font-size: 15px;
-  color: #ffffff;
+  color: white;
   letter-spacing: 2.3px;
 }
 
@@ -58,9 +58,9 @@
   border: none;
   border-radius: 0;
   text-transform: uppercase;
-  background-color: #3dc9b3;
+  background-color: $color-green;
 
   &:hover {
-    background-color: #35a896;
+    background-color: $color-green-dark;
   }
 }

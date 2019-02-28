@@ -27,3 +27,12 @@
     left: calc(50% - 45px/2);
   }
 }
+
+@media (max-width: $mobile-width) {
+  .problems__subtitle {
+
+    &::before {
+      top: 85px;
+    }
+  }
+}

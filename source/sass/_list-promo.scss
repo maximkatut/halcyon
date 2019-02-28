@@ -1,10 +1,13 @@
+.list-promo {
+  // width: 100%;
+}
+
 .list-promo__img {
   margin-bottom: 50px;
 }
 
 .list-promo__item {
-  width: 100%;
-  padding: 0;
+  padding-right: 0;
 }
 
 .list-promo__title {
@@ -15,8 +18,14 @@
 
 .list-promo__description {
   margin-bottom: 120px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
   line-height: 20px;
   letter-spacing: -0.3px;
+}
+
+@media (max-width: $mobile-width) {
+  .list-promo__description {
+    margin-bottom: 60px;
+  }
 }

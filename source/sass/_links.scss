@@ -14,10 +14,10 @@
   height: 40px;
   margin-right: 8px;
   border-radius: 50%;
-  background-color: #242830;
+  background-color: $color-soc-link;
 
   &:hover {
-    background-color: #3dc9b3;
+    background-color: $color-green;
   }
 }
 

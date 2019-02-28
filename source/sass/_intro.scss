@@ -1,7 +1,7 @@
 .intro {
   height: auto;
   padding-top: 105px;
-  background-color: #f3f5f8;
+  background-color: $color-bg-grey;
 }
 
 .intro__title {
@@ -20,4 +20,14 @@
   padding-left: 42px;
   padding-right: 42px;
   line-height: 30px;
+}
+
+@media (max-width: $mobile-width) {
+  .intro {
+    padding-top: 80px;
+  }
+
+  .intro__description {
+    margin-bottom: 70px;
+  }
 }

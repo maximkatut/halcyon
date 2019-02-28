@@ -1,7 +1,5 @@
 .love {
   margin-top: 100px;
-  padding-left: 0px;
-  padding-right: 0px;
 }
 
 .love__title {
@@ -22,5 +20,15 @@
 
   &::before {
     @include line;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .love {
+    margin-top: 70px;
+  }
+
+  .love__title {
+    margin-bottom: 80px;
   }
 }

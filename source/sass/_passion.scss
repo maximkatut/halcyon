@@ -1,6 +1,6 @@
 .passion {
   padding: 64px 0 52px 0;
-  background-color: #242830;
+  background-color: $color-soc-link;
 }
 
 .passion__title {
@@ -9,6 +9,6 @@
   width: 300px;
   border: 2px solid white;
   font-size: 15px;
-  color: #ffffff;
+  color: $color-bg-white;
   letter-spacing: 2.3px;
 }

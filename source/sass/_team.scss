@@ -69,3 +69,18 @@
 .team .carousel-indicators {
   bottom: -97px;
 }
+
+
+@media (max-width: $mobile-width) {
+  .team {
+    padding-bottom: 140px;
+  }
+
+  .team__title {
+    margin-bottom: 50px;
+  }
+
+  .team .carousel-indicators {
+    bottom: -67px;
+  }
+}

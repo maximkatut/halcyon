@@ -84,7 +84,7 @@ body {
   .page-header__btn-more.btn-primary.btn:active {
     background-color: #35a896; }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .page-header__name {
     font-size: 32px;
     letter-spacing: 10px; } }
@@ -104,7 +104,7 @@ body {
     content: "";
     width: 15px;
     height: 15px;
-    top: 230%;
+    bottom: -40px;
     left: 49.35%;
     background-image: url("../img/triangle.png");
     background-repeat: no-repeat; }
@@ -115,10 +115,14 @@ body {
   padding-right: 42px;
   line-height: 30px; }
 
+@media (max-width: 767px) {
+  .intro {
+    padding-top: 80px; }
+  .intro__description {
+    margin-bottom: 70px; } }
+
 .love {
-  margin-top: 100px;
-  padding-left: 0px;
-  padding-right: 0px; }
+  margin-top: 100px; }
 
 .love__title {
   position: relative;
@@ -132,7 +136,7 @@ body {
     content: "";
     width: 15px;
     height: 15px;
-    top: 230%;
+    bottom: -40px;
     left: 49.35%;
     background-image: url("../img/triangle.png");
     background-repeat: no-repeat; }
@@ -148,12 +152,17 @@ body {
     left: calc(50% - 16px);
     background-color: #3dc9b3; }
 
+@media (max-width: 767px) {
+  .love {
+    margin-top: 70px; }
+  .love__title {
+    margin-bottom: 80px; } }
+
 .list-promo__img {
   margin-bottom: 50px; }
 
 .list-promo__item {
-  width: 100%;
-  padding: 0; }
+  padding-right: 0; }
 
 .list-promo__title {
   margin-bottom: 51px;
@@ -162,10 +171,14 @@ body {
 
 .list-promo__description {
   margin-bottom: 120px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
   line-height: 20px;
   letter-spacing: -0.3px; }
+
+@media (max-width: 767px) {
+  .list-promo__description {
+    margin-bottom: 60px; } }
 
 .iphone {
   background-color: #b7c0c5;
@@ -189,7 +202,7 @@ body {
     content: "";
     width: 15px;
     height: 15px;
-    top: 230%;
+    bottom: -40px;
     left: 49.35%;
     background-image: url("../img/triangle.png");
     background-repeat: no-repeat; }
@@ -208,6 +221,19 @@ body {
 
 .iphone .carousel-indicators {
   bottom: 117px; }
+
+@media (max-width: 767px) {
+  .iphone__title {
+    margin-top: 80px;
+    margin-left: 0; }
+  .iphone__description {
+    padding-left: 50px; }
+  .iphone__description p {
+    margin-bottom: 20px; }
+    .iphone__description p:nth-child(3) {
+      margin-bottom: 160px; }
+  .iphone .carousel-indicators {
+    bottom: 80px; } }
 
 .problems {
   margin-bottom: 102px;
@@ -241,6 +267,10 @@ body {
     background-position: 14px 18px;
     top: 65px;
     left: calc(50% - 45px/2); }
+
+@media (max-width: 767px) {
+  .problems__subtitle::before {
+    top: 85px; } }
 
 .about {
   padding: 0 68px;
@@ -284,6 +314,10 @@ body {
   letter-spacing: -1px;
   line-height: 20px; }
 
+@media (max-width: 767px) {
+  .about {
+    padding-bottom: 100px; } }
+
 .passion {
   padding: 64px 0 52px 0;
   background-color: #242830; }
@@ -318,7 +352,7 @@ body {
     content: "";
     width: 15px;
     height: 15px;
-    top: 230%;
+    bottom: -40px;
     left: 49.35%;
     background-image: url("../img/triangle.png");
     background-repeat: no-repeat; }
@@ -363,6 +397,14 @@ body {
 
 .team .carousel-indicators {
   bottom: -97px; }
+
+@media (max-width: 767px) {
+  .team {
+    padding-bottom: 140px; }
+  .team__title {
+    margin-bottom: 50px; }
+  .team .carousel-indicators {
+    bottom: -67px; } }
 
 .links__item {
   display: inline-block;
@@ -412,7 +454,7 @@ body {
     content: "";
     width: 26px;
     height: 26px;
-    top: 27%;
+    top: 110px;
     left: calc(50% - 13px);
     background-image: url(../img/letter.png);
     background-repeat: no-repeat; }
@@ -421,7 +463,7 @@ body {
   margin-bottom: 43px;
   font-family: "GothamRoundedBook";
   font-size: 15px;
-  color: #ffffff;
+  color: white;
   letter-spacing: 2.3px; }
 
 .subscribe__email {
@@ -464,7 +506,7 @@ body {
     content: "";
     width: 15px;
     height: 15px;
-    top: 230%;
+    bottom: -40px;
     left: 49.35%;
     background-image: url("../img/triangle.png");
     background-repeat: no-repeat; }
@@ -515,6 +557,10 @@ body {
 .contacts__social {
   margin-top: 85px; }
 
+@media (max-width: 767px) {
+  .contacts {
+    padding-top: 90px; } }
+
 .social__list {
   margin-bottom: 108px; }
 
@@ -523,7 +569,7 @@ body {
   display: block;
   width: 40px;
   height: 40px;
-  margin-right: 10px;
+  margin-right: 7px;
   background-color: #242830;
   border-radius: 50%; }
   .social__item a:hover {
@@ -537,9 +583,13 @@ body {
   top: 13px;
   left: 12px; }
 
+@media (max-width: 767px) {
+  .social__list {
+    margin-bottom: 80px; } }
+
 .page-footer {
   padding: 50px 68px 33px;
   background-color: #242830; }
 
 .page-footer a {
-  color: #fff; }
+  color: #ffffff; }
